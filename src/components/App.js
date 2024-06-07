@@ -16,15 +16,21 @@ function Home() {
   );
 }
 
-{/* write an <About> component here */}
+const About = (props) => {
+  return (
+    <div id="about">
+      <h2>{props.text}</h2>
+    </div>
+  )
+}
 
 
 function App() {
   return (
     <div>
       <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+      <Home />
+      <About text="About" />
     </div>
   );
 }
